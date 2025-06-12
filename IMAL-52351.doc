@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#IMAL-52351] 14.7 - GAB - Reimbursement Amount and Reimbursement Profit is zero in early settlement screen.</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://azentio.atlassian.net/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <b><a id="parent_issue_summary" href="https://azentio.atlassian.net/browse/IMAL-415">14.7 Financing - FMS/IIS/ITRS/PROV/LEND/IRVL</a></b>
+                <span style="font-size: 9px">(<a id="parent_issue_key" href="https://azentio.atlassian.net/browse/IMAL-415">IMAL-415</a>)</span>
+                <h3 class="formtitle"><img src="https://azentio.atlassian.net/images/icons/link_out_bot.gif" width="16" height="16" />
+                        [IMAL-52351]&nbsp;<a href="https://azentio.atlassian.net/browse/IMAL-52351">14.7 - GAB - Reimbursement Amount and Reimbursement Profit is zero in early settlement screen.</a>
+            <span class="subText">
+               Created: 20/Mar/25                   &nbsp;Updated: 01/Apr/25
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://azentio.atlassian.net/secure/BrowseProject.jspa?id=10079">AZENTIO iMAL</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                                        <a title="IIS - Islamic Invest"
+                href="https://azentio.atlassian.net/issues/?jql=project%3D10079%20AND%20%22component%22%3D10188%20ORDER%20BY%20priority%20ASC"
+            >IIS</a>                        </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                                        <a title="14.7 - 14.7"
+                href="https://azentio.atlassian.net/issues/?jql=project%3D10079%20AND%20%22affectedVersion%22%3D10157%20ORDER%20BY%20priority%20ASC"
+            >14.7</a>                        </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                                        <a title="14.7 - 14.7"
+                href="https://azentio.atlassian.net/issues/?jql=project%3D10079%20AND%20%22fixVersion%22%3D10157%20ORDER%20BY%20priority%20ASC"
+            >14.7</a>                        </td>
+    </tr>
+    
+    
+            <td width="20%"><b>Parent:</b></td>
+        <td width="80%"><a href="https://azentio.atlassian.net/browse/IMAL-415">14.7 Financing - FMS/IIS/ITRS/PROV/LEND/IRVL</a></td>
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Critical
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:2ddf3211-239e-440a-be9a-065808ee53d9"
+                id="word_reporter_712020:2ddf3211-239e-440a-be9a-065808ee53d9"
+                href="https://azentio.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A2ddf3211-239e-440a-be9a-065808ee53d9">
+                    Jayanth Rao
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:dc00dcf2-8aa8-4d16-a5c2-bda5dcaf54b0"
+                id="word_assignee_712020:dc00dcf2-8aa8-4d16-a5c2-bda5dcaf54b0"
+                href="https://azentio.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Adc00dcf2-8aa8-4d16-a5c2-bda5dcaf54b0">
+                    Jayaprakash S
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-276761-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            Invalid                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            1 hour
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://azentio.atlassian.net/images/icons/attach/word.gif" height="16" width="16" border="0" alt="Microsoft Word">
+                    bug-2.docx &nbsp;&nbsp;&nbsp;
+                                    <img src="https://azentio.atlassian.net/images/icons/attach/text.gif" height="16" width="16" border="0" alt="Text File">
+                    IIS_JAYANT_PathLog_20-03-2025_0.log &nbsp;&nbsp;&nbsp;
+                                    <img src="https://azentio.atlassian.net/images/icons/attach/text.gif" height="16" width="16" border="0" alt="Text File">
+                    IIS_JAYANT_PathLog_20-03-2025_0.log.1 &nbsp;&nbsp;&nbsp;
+                                    <img src="https://azentio.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20250321-095603.png &nbsp;&nbsp;&nbsp;
+                                    <img src="https://azentio.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20250321-095704.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Environment:</b></td>
+                <td id="customfield_10604-276761-value" class="value" bgcolor="#ffffff" width="80%">    QA
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Actual Outcome:</b></td>
+                <td id="customfield_10156-276761-value" class="value" bgcolor="#ffffff" width="80%">      0 for Reimbursement Amount field and Reimbursement profit
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Expected Outcome:</b></td>
+                <td id="customfield_10155-276761-value" class="value" bgcolor="#ffffff" width="80%">      it should default the correct value based on the plan
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Reported In Version:</b></td>
+                <td id="customfield_10150-276761-value" class="value" bgcolor="#ffffff" width="80%">    <div class="shorten" id="customfield_10150-field">
+                                    <a href="https://azentio.atlassian.net/issues/?jql=project%3D%22IMAL%22%20AND%20%22Reported+In+Version%22%3D%2214.7%22%20ORDER%20BY%20priority%20ASC" title="14.7 - 14.7">14.7</a>                        </div>
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Issue Severity:</b></td>
+                <td id="customfield_10094-276761-value" class="value" bgcolor="#ffffff" width="80%">    High
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Epic Link:</b></td>
+                <td id="customfield_10014-276761-value" class="value" bgcolor="#ffffff" width="80%">
+    <a class="aui-label ghx-label-3" href="https://azentio.atlassian.net/browse/IMAL-415">
+        14.7 Financing - FMS/IIS/ITRS/PROV/LEND/IRVL
+    </a>
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Account:</b></td>
+                <td id="customfield_10197-276761-value" class="value" bgcolor="#ffffff" width="80%">    GIB PE - IMAL 14.7
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Issue Origin:</b></td>
+                <td id="customfield_10610-276761-value" class="value" bgcolor="#ffffff" width="80%">    Internal
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Regression:</b></td>
+                <td id="customfield_10619-276761-value" class="value" bgcolor="#ffffff" width="80%">    NO
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Fixed By:</b></td>
+                <td id="customfield_10617-276761-value" class="value" bgcolor="#ffffff" width="80%">        <span class="tinylink">        <span class="user-hover" rel="712020:dc00dcf2-8aa8-4d16-a5c2-bda5dcaf54b0" id="user_cf_712020:dc00dcf2-8aa8-4d16-a5c2-bda5dcaf54b0">Jayaprakash S</span></span>
+    </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Project Category:</b></td>
+                <td id="customfield_10109-276761-value" class="value" bgcolor="#ffffff" width="80%">    Product
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Waiting for Support?:</b></td>
+                <td id="customfield_10851-276761-value" class="value" bgcolor="#ffffff" width="80%">    No
+</td>
+            </tr>
+                                    <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-276761-value" class="value" bgcolor="#ffffff" width="80%"></td>
+            </tr>
+                                    <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>QA: Test executed by:</b></td>
+                <td id="customfield_10138-276761-value" class="value" bgcolor="#ffffff" width="80%">        <span class="tinylink">        <span class="user-hover" rel="3c5b5370-d5ff-44c0-b644-d95372863b8a" id="user_cf_3c5b5370-d5ff-44c0-b644-d95372863b8a">Jayanth Rao</span></span>
+    </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>steps  :</p>
+
+<p>1--create a deal and approve </p>
+
+<p>2--Settle the first instalment </p>
+
+<p>3--Now reschedule the deal and move the installment for 2 years </p>
+
+<p>4 --approve the rescheduled repayment plan</p>
+
+<p>5 --in early settlement screen getting the above problem.</p>
+
+
+
+<p>scenario followed : </p>
+
+<p>created deal on 01-01-2023</p>
+
+<p>settled the first installement on 01-02-2023</p>
+
+<p>rescheduled the plan and moved the next installement to 2 years i.e next installement date - 01-02-2025. </p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-419059"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:dc00dcf2-8aa8-4d16-a5c2-bda5dcaf54b0"
+                id="word_commented_712020:dc00dcf2-8aa8-4d16-a5c2-bda5dcaf54b0"
+                href="https://azentio.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Adc00dcf2-8aa8-4d16-a5c2-bda5dcaf54b0">
+                    Jayaprakash S
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">21/Mar/25</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-419059"><td bgcolor="#ffffff">
+            <p>Dear <a href="https://azentio.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A2ddf3211-239e-440a-be9a-065808ee53d9" class="user-hover" rel="712020:2ddf3211-239e-440a-be9a-065808ee53d9" data-account-id="712020:2ddf3211-239e-440a-be9a-065808ee53d9" accountid="712020:2ddf3211-239e-440a-be9a-065808ee53d9" rel="noreferrer">Jayanth Rao</a> ,</p>
+
+<p>Please enable the flag “<tt>COLLECT_ES_PROFIT_REPAYPLAN_YN</tt>” in Product class to have profit related data in Early Setltment Screen (<tt>Reimbursement Amount</tt>,  <tt>Reimbursement Profit</tt> &amp; <tt>Collect Profit Upto</tt> fields.)</p>
+
+
+
+<p><span class="image-wrap" style=""><img src="/rest/api/3/attachment/content/376363" alt="image-20250321-095603.png" height="720" width="1366" style="border: 0px solid black" /></span></p>
+
+<p>After Enabling, </p>
+
+<p><span class="image-wrap" style=""><img src="/rest/api/3/attachment/content/376364" alt="image-20250321-095704.png" height="720" width="1366" style="border: 0px solid black" /></span></p>
+        </td></tr>
+            </table>
+Generated at Thu Jun 12 06:38:57 UTC 2025 by Vineet Gajanan using Jira 1001.0.0-SNAPSHOT#100283-rev:674e3d450c8038f7e3de9e94d83af6d24751a4c9.
+
+</body>
+</html>
